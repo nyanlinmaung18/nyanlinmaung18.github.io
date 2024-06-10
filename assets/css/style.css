@@ -43,7 +43,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #5c9f24;
+  background: #0d163c;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -57,7 +57,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #6fc02c;
+  background: #1e328d;
   color: #fff;
 }
 
@@ -151,7 +151,7 @@ h6 {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: #5c9f24;
+  background-color: #FF0000;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -179,13 +179,13 @@ h6 {
   color: #fff;
   font-weight: 400;
   font-family: "Poppins", sans-serif;
-  border: 2px solid #5c9f24;
+  border: 2px solid #FF0000;
 }
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #5c9f24;
+  background: #FF0000;
 }
 
 .navbar .getstarted:hover:before,
@@ -526,8 +526,8 @@ h6 {
   color: #fff;
   animation-delay: 0.8s;
   text-transform: uppercase;
-  border: 2px solid #5c9f24;
-  background: #5c9f24;
+  border: 2px solid #0d163c;
+  background: #0d163c;
 }
 
 #hero .btn-get-started:hover {
@@ -575,7 +575,7 @@ section {
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #5c9f24;
+  color: #FF0000;
 }
 
 .section-title p {
@@ -611,7 +611,7 @@ section {
 .about .content .icon-box i {
   font-size: 48px;
   float: left;
-  color: #5c9f24;
+  color: #FF0000;
 }
 
 .about .content .icon-box p {
@@ -739,7 +739,7 @@ section {
 .counts .count-box i {
   display: block;
   font-size: 44px;
-  color: #5c9f24;
+  color: #FF0000;
   float: left;
   line-height: 0;
 }
@@ -1263,7 +1263,7 @@ section {
 }
 
 .pricing .recommended {
-  background: #5c9f24;
+  background: #0d163c;
 }
 
 .pricing .recommended h3,
