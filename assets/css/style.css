@@ -509,7 +509,7 @@ h6 {
 
 #hero .carousel-indicators li.active {
   opacity: 1;
-  background: #5c9f24;
+  background: #FF0000;
 }
 
 #hero .btn-get-started {
@@ -717,11 +717,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #5c9f24;
+  border: 1px solid #0d163c;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #5c9f24;
+  background-color: #0d163c;
 }
 
 /*--------------------------------------------------------------
@@ -1468,7 +1468,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #5c9f24;
+  background: #0d163c;
   border: 0;
   padding: 10px 30px 12px 30px;
   color: #fff;
@@ -1697,4 +1697,8 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+#footer .flag {
+  width: 20px;
+  height: 12px;
 }
