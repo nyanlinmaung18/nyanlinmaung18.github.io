@@ -231,7 +231,34 @@ new Swiper('.testimonials-slider', {
     }
   }
 });
+/**
+   * Function to set the href attribute for the "Buy Now" button
+   */
+ /**
+   * Function to set the href attribute for all "Buy Now" buttons
+   */
+ const setBuyNowHref = () => {
+  const url = "https://www.thaiconsularyangon.com/visa/index.php/make-an-appointment";
+  const buyNowButtons = select('.btn-buy', true); // Select all elements with class 'btn-buy'
+  if (buyNowButtons.length > 0) {
+    buyNowButtons.forEach(button => {
+      button.href = url;
+    });
+  }
+}
 
+// Call the function on window load
+window.addEventListener('load', () => {
+  setBuyNowHref();
+
+  // Existing onload functions...
+  navbarlinksActive();
+  if (window.location.hash) {
+    if (select(window.location.hash)) {
+      scrollto(window.location.hash);
+    }
+  }
+});
   /**
    * Initiate Pure Counter 
    */
