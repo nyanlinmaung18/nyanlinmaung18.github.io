@@ -15,12 +15,12 @@ body {
 }
 
 a {
-  color: #5c9f24;
+  color: #FF0000;
   text-decoration: none;
 }
 
 a:hover {
-  color: #74c92d;
+  color: #FF0000;
   text-decoration: none;
 }
 
@@ -531,8 +531,8 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #6ab82a;
-  border-color: #6ab82a;
+  background: #1e328d;
+  border-color: #1e328d;
   color: #fff;
 }
 
@@ -1197,7 +1197,7 @@ section {
 
 .pricing .box h4 {
   font-size: 42px;
-  color: #5c9f24;
+  color: #0d163c;
   font-weight: 500;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 20px;
@@ -1248,8 +1248,8 @@ section {
   display: inline-block;
   padding: 10px 40px 12px 40px;
   border-radius: 4px;
-  border: 2px solid #5c9f24;
-  color: #5c9f24;
+  border: 2px solid #FF0000;
+  color: #FF0000;
   font-size: 14px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
@@ -1258,7 +1258,7 @@ section {
 }
 
 .pricing .box .btn-buy:hover {
-  background: #5c9f24;
+  background: #FF0000;
   color: #fff;
 }
 
@@ -1283,7 +1283,7 @@ section {
 .pricing .recommended .btn-buy:hover {
   background: #fff;
   border-color: #fff;
-  color: #5c9f24;
+  color: #FF0000;
 }
 
 /*--------------------------------------------------------------
@@ -1326,7 +1326,7 @@ section {
   position: absolute;
   right: 0;
   left: 20px;
-  color: #9cdc66;
+  color: #FF0000;
 }
 
 .faq .faq-list .icon-show,
@@ -1351,7 +1351,7 @@ section {
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #5c9f24;
+  color: #e14444;
 }
 
 .faq .faq-list a.collapsed .icon-show {
@@ -1380,7 +1380,7 @@ section {
   font-size: 48px;
   display: inline-block;
   margin-bottom: 10px;
-  color: #5c9f24;
+  color: #0d163c;
 }
 
 .contact .contact-info address,
