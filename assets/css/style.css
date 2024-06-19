@@ -326,7 +326,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #5c9f24;
+  color: #FF0000;
 }
 
 .navbar-mobile>ul>li {
@@ -343,7 +343,7 @@ h6 {
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
   margin: 15px;
-  color: #5c9f24;
+  color: #FF0000;
   padding-left: 15px;
 }
 
