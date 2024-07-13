@@ -196,7 +196,7 @@
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
               <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="2927" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="2938" data-purecounter-duration="1" class="purecounter"></span>
               <p>ဝန်ဆောင်မှုပေးခဲ့ပြီးသော <strong>Customer</strong> အရေအတွက်</p>
             </div>
           </div>
@@ -204,7 +204,7 @@
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
               <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1602" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="1629" data-purecounter-duration="1" class="purecounter"></span>
               <p>ရောင်းချခဲ့ပြီးသော <strong>လေယာဥ်လက်မှတ်</strong> အရေအတွက်</p>
             </div>
           </div>
@@ -861,36 +861,37 @@
             <div class="contact-email">
               <i class="bi bi-envelope"></i>
               <h3>Email</h3>
-              <p><a href="mailto:paristravel.contact@gmail.com">info@paristravelservice.com</a></p>
+              <p><a href="mailto:info@paristravelservice.com?cc=paristravel.contact@gmail.com">info@paristravelservice.com</a></p>
             </div>
           </div>
 
         </div>
 
         <div class="form">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-            <div class="row">
-              <div class="col-md-6 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+          <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form"> -->
+          <form id="contactForm" class="php-email-form">
+              <div class="row">
+                  <div class="col-md-6 form-group">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="အမည်" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Email Address (ရှိလျှင်)">
+                  </div>
               </div>
-              <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="phone" placeholder="ဖုန်းနံပါတ်" required>
               </div>
-            </div>
-            <div class="form-group mt-3">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-            </div>
-            <div class="form-group mt-3">
-              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-            </div>
-            <div class="my-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-            </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit" onclick="sendEmail()">Send Message</button></div>
           </form>
-        </div>        
+      </div>           
 
       </div>
     </section><!-- End Contact Section -->
@@ -979,7 +980,9 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/sendEmail.js"></script>
 
 </body>
 

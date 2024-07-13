@@ -231,6 +231,7 @@ new Swiper('.testimonials-slider', {
     }
   }
 });
+
 /**
    * Function to set the href attribute for the "Buy Now" button
    */
