@@ -239,7 +239,7 @@ new Swiper('.testimonials-slider', {
    * Function to set the href attribute for all "Buy Now" buttons
    */
  const setBuyNowHref = () => {
-  const url = "https://www.thaiconsularyangon.com/visa/index.php/make-an-appointment";
+  const url = "https://m.me/paristravelmm";
   const buyNowButtons = select('.btn-buy', true); // Select all elements with class 'btn-buy'
   if (buyNowButtons.length > 0) {
     buyNowButtons.forEach(button => {
