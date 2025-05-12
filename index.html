@@ -858,6 +858,18 @@
   <div id="footer-placeholder"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+  <div class="login-dropdown" id="loginDropdown">
+    <form class="login-form" onsubmit="return fakeLogin(event)">
+      <div style="color: red; font-size: 14px; display: none;" id="loginError">
+      Username or password is incorrect.
+    </div>
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Sign In</button>
+      <a href="#" class="forgot-password">Forgot your password?</a>
+    </form>
+  </div>
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -889,9 +901,45 @@
 
     includeHTML();
   </script>
+<script>
+  // Open the login form and position it below the button
+  function toggleLogin() {
+    const dropdown = document.getElementById('loginDropdown');
+    const button = document.querySelector('.getstarted');
+
+    if (dropdown && button) {
+      const rect = button.getBoundingClientRect();
+      
+      // Set the dropdown position based on the button's position
+      dropdown.style.top = rect.bottom + window.scrollY + 'px'; // Position below the button
+      dropdown.style.left = rect.left - 100 + 'px'; // Align with the left of the button
+
+      // Toggle visibility
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    }
+  }
+
+  // Close the dropdown if clicking outside of it
+  document.addEventListener('click', function(event) {
+    const dropdown = document.getElementById('loginDropdown');
+    const button = document.querySelector('.getstarted');
+
+    // Close the form if the click is outside both the dropdown (form) and the button
+    if (dropdown && button) {
+      if (!dropdown.contains(event.target) && !button.contains(event.target)) {
+        dropdown.style.display = 'none';
+      }
+    }
+  });
+</script>
+<script>
+  function fakeLogin(event) {
+    event.preventDefault(); // stop form from submitting
+    document.getElementById('loginError').style.display = 'block';
+    return false;
+  }
+</script>
 
 </body>
-
-
 
 </html>
