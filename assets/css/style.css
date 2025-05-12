@@ -1704,3 +1704,95 @@ section {
   width: 20px;
   height: 12px;
 }
+/* ===== Hero Carousel Category Styles ===== */
+.category-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.category-wrapper {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 90%;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 160px;
+}
+
+.category img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.category span {
+  font-size: 14px;
+  color: #0e163c;
+  font-weight: bold;
+}
+
+#hero .carousel-item {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.category-heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.carousel-content.category-box {
+  display: flex;
+  flex-direction: column;   /* Stack vertically */
+  align-items: center;      /* Center all children horizontally */
+}
+
+
+.category-heading h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.category-heading p {
+  font-size: 18px;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .category-wrapper {
+    gap: 5px;
+    padding: 5px;
+  }
+
+  .category img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .category span {
+    font-size: 12px;
+  }
+  .category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 60px;
+}
+}
