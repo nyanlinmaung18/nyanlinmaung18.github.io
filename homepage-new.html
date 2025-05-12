@@ -241,6 +241,25 @@
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/sendEmail.js"></script>
+    <!-- Include loader script -->
+  <script>
+    async function includeHTML() {
+      const loadInto = async (selector, file) => {
+        const el = document.querySelector(selector);
+        const res = await fetch(file);
+        if (res.ok) {
+          const html = await res.text();
+          el.innerHTML = html;
+        } else {
+          el.innerHTML = "<p>Failed to load: " + file + "</p>";
+        }
+      };
+      await loadInto("#header-placeholder", "header.html");
+      await loadInto("#footer-placeholder", "footer.html");
+    }
+
+    includeHTML();
+  </script>
   <script>
             const categories = [
                 { icon: "hot-air-ballon.webp", alt: "Tours", label: "Tours" },

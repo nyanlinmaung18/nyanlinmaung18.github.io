@@ -15,12 +15,12 @@ body {
 }
 
 a {
-  color: #FF0000;
+  color: #FF5B00;
   text-decoration: none;
 }
 
 a:hover {
-  color: #FF0000;
+  color: #FF5B00;
   text-decoration: none;
 }
 
@@ -70,10 +70,10 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgb(243, 243, 243);
   transition: all 0.5s;
   z-index: 997;
-  height: 80px;
+  height: 60px;
 }
 
 #header .logo {
@@ -129,8 +129,8 @@ h6 {
   padding: 0 4px;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.7);
+  font-weight: 700;
+  color: rgba(3, 0, 0);
   white-space: nowrap;
   transition: 0.3s;
   text-transform: uppercase;
@@ -151,7 +151,7 @@ h6 {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: #FF0000;
+  background-color: #FF5B00;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -168,7 +168,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #fff;
+  color: rgba(3, 0, 0);
 }
 
 .navbar .getstarted,
@@ -176,16 +176,16 @@ h6 {
   padding: 8px 25px;
   margin-left: 12px;
   border-radius: 4px;
-  color: #fff;
+  color: rgba(3, 0, 0);
   font-weight: 400;
   font-family: "Poppins", sans-serif;
-  border: 2px solid #FF0000;
+  border: 2px solid #FF5B00;
 }
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #FF0000;
+  background: #FF5B00;
 }
 
 .navbar .getstarted:hover:before,
@@ -263,7 +263,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: rgba(3, 0, 0);
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -326,7 +326,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #FF0000;
+  color: #FF5B00;
 }
 
 .navbar-mobile>ul>li {
@@ -343,7 +343,7 @@ h6 {
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
   margin: 15px;
-  color: #FF0000;
+  color: #FF5B00;
   padding-left: 15px;
 }
 
@@ -509,7 +509,7 @@ h6 {
 
 #hero .carousel-indicators li.active {
   opacity: 1;
-  background: #FF0000;
+  background: #FF5B00;
 }
 
 #hero .btn-get-started {
@@ -575,7 +575,7 @@ section {
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #FF0000;
+  color: #FF5B00;
 }
 
 .section-title p {
@@ -613,7 +613,7 @@ section {
 .about .content .icon-box i {
   font-size: 48px;
   float: left;
-  color: #FF0000;
+  color: #FF5B00;
 }
 
 .about .content .icon-box p {
@@ -741,7 +741,7 @@ section {
 .counts .count-box i {
   display: block;
   font-size: 44px;
-  color: #FF0000;
+  color: #FF5B00;
   float: left;
   line-height: 0;
 }
@@ -1250,8 +1250,8 @@ section {
   display: inline-block;
   padding: 10px 40px 12px 40px;
   border-radius: 4px;
-  border: 2px solid #FF0000;
-  color: #FF0000;
+  border: 2px solid #FF5B00;
+  color: #FF5B00;
   font-size: 14px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
@@ -1260,7 +1260,7 @@ section {
 }
 
 .pricing .box .btn-buy:hover {
-  background: #FF0000;
+  background: #FF5B00;
   color: #fff;
 }
 
@@ -1328,7 +1328,7 @@ section {
   position: absolute;
   right: 0;
   left: 20px;
-  color: #FF0000;
+  color: #FF5B00;
 }
 
 .faq .faq-list .icon-show,
@@ -1382,7 +1382,7 @@ section {
   font-size: 48px;
   display: inline-block;
   margin-bottom: 10px;
-  color: #FF0000;
+  color: #FF5B00;
 }
 
 .contact .contact-info address,
@@ -1470,7 +1470,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #0d163c;
+  background: #FF5B00;
   border: 0;
   padding: 10px 30px 12px 30px;
   color: #fff;
@@ -1479,7 +1479,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #1e328d;
+  background: #ca4a05;
 }
 
 @keyframes animate-loading {
@@ -1564,7 +1564,7 @@ section {
 }
 
 #footer .footer-top {
-  background: #1d1d1d;
+  background: rgb(243, 243, 243);
   border-bottom: 1px solid #2f2f2f;
   padding: 60px 0 30px 0;
 }
@@ -1579,6 +1579,7 @@ section {
   padding: 2px 0 2px 0;
   line-height: 1;
   font-weight: 700;
+  color: rgba(3, 0, 0);
 }
 
 #footer .footer-top .footer-info p {
@@ -1586,7 +1587,7 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Roboto", sans-serif;
-  color: #fff;
+  color: rgba(3, 0, 0);
 }
 
 #footer .footer-top .social-links a {
@@ -1605,7 +1606,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #5c9f24;
+  background: #FF5B00;
   color: #fff;
   text-decoration: none;
 }
@@ -1613,7 +1614,7 @@ section {
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: 600;
-  color: #fff;
+  color: rgba(3, 0, 0);
   position: relative;
   padding-bottom: 12px;
 }
@@ -1630,7 +1631,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #FF0000;
+  color: #FF5B00;
   font-size: 18px;
   line-height: 1;
 }
@@ -1646,14 +1647,14 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #fff;
+  color: rgba(3, 0, 0);
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #FF0000;
+  color: #FF5B00;
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -1679,7 +1680,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #FF0000;
+  background: #FF5B00;
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
@@ -1704,6 +1705,10 @@ section {
   width: 20px;
   height: 12px;
 }
+#footer .footer-top .footer-newsletter p {
+  color: rgba(3, 0, 0); /* or any color you want */
+}
+
 /* ===== Hero Carousel Category Styles ===== */
 .category-box {
   display: flex;
