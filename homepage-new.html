@@ -40,6 +40,8 @@
 </head>
 
 <body>
+  <!-- Placeholder for header -->
+  <div id="header-placeholder"></div>
 
 <!-- ======= Hero Section ======= -->
  
@@ -140,9 +142,21 @@
           link: "https://www.klook.com/en-US/attractions/?spm=Home.TopSearchBar%3Aany%3A%3AMwebMainBanner%3AMainNode_LIST&clickId=d274a97165&aid=83423", 
           external: true 
         },
-        { icon: "hotel.webp", alt: "Hotels", label: "Hotels", link: "/hotels", external: false },
-        { icon: "train.webp", alt: "Transport", label: "Transport", link: "/transport", external: false },
-        { icon: "car.webp", alt: "CarRental", label: "Car rentals", link: "/car-rentals", external: false },
+        { 
+          icon: "hotel.webp", 
+          alt: "Hotels", 
+          label: "Hotels", 
+          link: "https://www.klook.com/en-US/hotels/?spm=Home.TopSearchBar%3Aany%3A%3AMwebMainBanner%3AMainNode_LIST&clickId=ee40c79318&aid=83423", 
+          external: true 
+        },
+        { 
+          icon: "train.webp", 
+          alt: "Train and Bus", 
+          label: "Train and Bus", 
+          link: "https://ticket.paristravelservice.com/en?curr=THB", 
+          external: true 
+        },
+        // { icon: "car.webp", alt: "CarRental", label: "Car rentals", link: "/car-rentals", external: false },
     ];
 
     const createCategoryHTML = () => {
@@ -158,7 +172,25 @@
         document.getElementById(`category-slide-${i}`).innerHTML = createCategoryHTML();
     }
 </script>
+  <!-- Include loader script -->
+  <script>
+    async function includeHTML() {
+      const loadInto = async (selector, file) => {
+        const el = document.querySelector(selector);
+        const res = await fetch(file);
+        if (res.ok) {
+          const html = await res.text();
+          el.innerHTML = html;
+        } else {
+          el.innerHTML = "<p>Failed to load: " + file + "</p>";
+        }
+      };
+      await loadInto("#header-placeholder", "header.html");
+      await loadInto("#footer-placeholder", "footer.html");
+    }
 
+    includeHTML();
+  </script>
     
 </body>
 
