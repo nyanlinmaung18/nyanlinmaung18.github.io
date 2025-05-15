@@ -476,7 +476,8 @@ h6 {
 #hero .carousel-control-next-icon,
 #hero .carousel-control-prev-icon {
   background: none;
-  font-size: 10px;
+  font-size: 15px;
+  /* font-size: 30px; */
   line-height: 0;
   width: auto;
   height: auto;
@@ -486,6 +487,8 @@ h6 {
   color: rgba(255, 255, 255, 0.5);
   width: 34px;
   height: 34px;
+  /* width: 54px;
+  height: 54px; */
   display: flex;
   align-items: center;
   justify-content: center;
